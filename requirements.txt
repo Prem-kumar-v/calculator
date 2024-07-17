@@ -40,3 +40,4 @@ urllib3==2.1.0
 wavio==0.0.9
 Werkzeug==3.0.0
 WTForms==3.1.1
+gunicorn
