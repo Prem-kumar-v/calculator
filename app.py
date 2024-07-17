@@ -1,5 +1,6 @@
 from flask import Flask,render_template,url_for,redirect,session,request,flash
 from flask_mail import Mail,Message
+import random
 
 app=Flask(__name__,static_folder="static")
 
@@ -33,11 +34,12 @@ def index():
 @app.route("/love",methods=["GET","POST"])
 def love():
       
+      number = ['90','91','92','93','94','95','96','97','98','99','100']
+      char=random.choice(number)
     
     
     
-    
-      return render_template("show.html")
+      return render_template("show.html",data=char)
     
 if(__name__=='__main__'):
      app.secret_key="flask"

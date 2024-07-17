@@ -4,27 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body{
+            background-color: #f2eeee;
+        }
         h1{
             position: relative;
-            right: -550px;
+            left: 400px;
             top: 30px;
+            font-size: 70px;
         }
 
         form{
             position: relative;
-            right: -550px;
+            left: 500px;
             top: 30px;
+            height: 300px;
+            width: 300px;
+            border: 5px solid deeppink;
+            padding: 20px;
+            border-radius: 20px;
+        
+        }
+
+        input{
+            height: 20px;
+            width: 200px;
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+            left: 40px;
+            top: 50px;
+        }
+
+        #btn{
+
+            height: 100px;
+            width: 100px;
+            box-shadow: 
+            -10px -10px 15px rgba(255,255,255,0.5),
+            10px 10px 15px rgba(70,70,70,0.12);
+            border-radius: 50%;
+            border: 8px solid #e70101;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 90px;
+            top: 50px;
+
+            
+        }
+        #btn:hover{
+            border: 8px solid #ef0e8a;
+        }
+        i{
+            font-size: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Love Calculator</h1>
+    <h1>Love Calculator</h1><br><br>
 
     <form action="" method="POST" autocomplete="off"> 
         <input type="text" name="fname" placeholder="Your Name"><br><br>
         <input type="text" name="lname" placeholder="Your Crush Name"><br><br>
-        <input id="btn" type="submit" name="calc" value="Submit">
+       <button id="btn" name="calc"> <i class="fa-sharp-duotone fa-solid fa-heart" style="--fa-primary-color: #f71515; --fa-secondary-color: #db1414;"></i></button>
 
     </form>
     
