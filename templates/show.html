@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+            h1{
+                font-size: 120px;
+                color: gray;
+                animation: vpk 1s infinite;
+                
+         }
+
+         body{
+            background-color: rgb(46, 44, 44);
+         }
+             @keyframes vpk{
+                 from{
+                 color: white;
+                 }
+         
+                  to{
+                     color: white;
+                     text-shadow: 0 0 5px green,
+                      0 0 25px green,
+                     0 0 50px green,
+                     0 0 100px green;
+                  }
+             
+              }
+        
+    #box{
+        height: 300px;
+        width: 300px;
+        background-color: rgb(31, 29, 29);
+        border: 5px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 130px;
+        left: 50px;
+
+    }
+    </style>
 </head>
 <body>
-    <h1>{{data}}%</h1>
+    <div id="box">
+        <h1>{{data}}%</h1>
+    </div>
+   
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lovecalculator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
@@ -12,24 +12,48 @@
         }
 
         body{
-            background-color: #f2eeee;
+            background-color: rgb(205, 205, 205);
+            width: 100vw;
+            height: 100vh;
         }
         h1{
             position: relative;
-            left: 400px;
+            left: 80px;
             top: 30px;
-            font-size: 70px;
+            font-size: 50px;
+            color: gray;
+            animation: vpk 1s infinite;
         }
+
+        @keyframes vpk{
+            from{
+            color: white;
+            }
+    
+             to{
+                color: white;
+                text-shadow: 0 0 5px deeppink,
+                 0 0 25px deeppink,
+                0 0 50px deeppink,
+                0 0 100px deeppink;
+             }
+        
+        
+         }
 
         form{
             position: relative;
-            left: 500px;
+            left: 80px;
             top: 30px;
             height: 300px;
             width: 300px;
-            border: 5px solid deeppink;
+            border: 5px solid white;
+           
             padding: 20px;
             border-radius: 20px;
+            box-shadow: 
+            -10px -10px 15px rgba(255,255,255,0.5),
+            10px 10px 15px rgba(70,70,70,0.12);
         
         }
 
@@ -63,9 +87,15 @@
         }
         #btn:hover{
             border: 8px solid #ef0e8a;
+            transition: 0.2s;
+        }
+        i:hover{
+            color: #ef0e8a;
+            transition: 0.2s;
         }
         i{
             font-size: 40px;
+            color: #db1414;
         }
     </style>
 </head>
